@@ -1,0 +1,30 @@
+* {
+  margin-top: 5px;
+}
+
+/* light mode */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* dark mode */
+body.dark-mode {
+    background-color: #333;
+    color: #f9f9f9;
+}
+
+/* dark mode text */
+body.dark-mode #root * {
+  color: #f9f9f9;
+}
+
+/* light mode text */
+body:not(.dark-mode) #root * {
+  color: #333;
+}
+
+/* main title color */
+.MBSHeader__Title {
+  color: #333;
+}
